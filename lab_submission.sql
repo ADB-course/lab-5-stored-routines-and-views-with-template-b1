@@ -2,7 +2,9 @@
 DELIMITER $$
 CREATE PROCEDURE `PROC_LAB5`()
 BEGIN
-
+    DECLARE employeeDetails TEXT DEFAULT "";
+    DECLARE employeeRank INT DEFAULT 1;
+    DECLARE finished INT DEFAULT 0;
 
 
 
