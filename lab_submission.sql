@@ -27,6 +27,7 @@ LOOP_PopulateList: LOOP
         IF finished = 1 THEN
             LEAVE LOOP_PopulateList;
         END IF;
+        
 -- (ii) A Function called FUNC_LAB5
 
 
