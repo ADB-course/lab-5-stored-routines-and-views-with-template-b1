@@ -27,7 +27,8 @@ LOOP_PopulateList: LOOP
         IF finished = 1 THEN
             LEAVE LOOP_PopulateList;
         END IF;
-        
+         SET employeeRank = employeeRank + 1;
+        SELECT CONCAT("Rank #", employeeRank, ": ", employeeDetails) AS EmployeeInfo;
 -- (ii) A Function called FUNC_LAB5
 
 
