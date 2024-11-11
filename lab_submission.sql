@@ -29,6 +29,13 @@ LOOP_PopulateList: LOOP
         END IF;
          SET employeeRank = employeeRank + 1;
         SELECT CONCAT("Rank #", employeeRank, ": ", employeeDetails) AS EmployeeInfo;
+        END LOOP LOOP_PopulateList;
+
+    -- Close the cursor after use
+    CLOSE CURSOR_listOfEmployees;
+END$$
+
+DELIMITER ;
 -- (ii) A Function called FUNC_LAB5
 
 
