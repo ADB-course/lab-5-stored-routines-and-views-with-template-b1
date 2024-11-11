@@ -6,7 +6,7 @@ BEGIN
     DECLARE employeeRank INT DEFAULT 1;
     DECLARE finished INT DEFAULT 0;
 
-
+DECLARE CURSOR_listOfEmployees CURSOR FOR
 
 
 -- (ii) A Function called FUNC_LAB5
