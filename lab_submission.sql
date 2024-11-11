@@ -21,6 +21,7 @@ DECLARE CURSOR_listOfEmployees CURSOR FOR
 
     DECLARE CONTINUE HANDLER FOR NOT FOUND SET finished = 1;
 
+OPEN CURSOR_listOfEmployees;
 
 -- (ii) A Function called FUNC_LAB5
 
