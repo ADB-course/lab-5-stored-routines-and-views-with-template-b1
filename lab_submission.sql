@@ -22,7 +22,11 @@ DECLARE CURSOR_listOfEmployees CURSOR FOR
     DECLARE CONTINUE HANDLER FOR NOT FOUND SET finished = 1;
 
 OPEN CURSOR_listOfEmployees;
-
+LOOP_PopulateList: LOOP
+        FETCH CURSOR_listOfEmployees INTO employeeDetails;
+        IF finished = 1 THEN
+            LEAVE LOOP_PopulateList;
+        END IF;
 -- (ii) A Function called FUNC_LAB5
 
 
