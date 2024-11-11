@@ -7,7 +7,17 @@ BEGIN
     DECLARE finished INT DEFAULT 0;
 
 DECLARE CURSOR_listOfEmployees CURSOR FOR
-
+ SELECT 
+        CONCAT(
+            employees.firstName, ' ', employees.lastName, 
+            ' (', employees.employeeNumber, ') ',
+            ' from ', departments.departmentName,
+            ' with salary: ', FORMAT(salaries.salary, 2)
+        ) AS employee_info
+    FROM employees
+    INNER JOIN departments ON employees.departmentId = departments.departmentId
+    INNER JOIN salaries ON employees.employeeNumber = salaries.employeeNumber
+    ORDER BY salaries.salary DESC;
 
 -- (ii) A Function called FUNC_LAB5
 
