@@ -19,6 +19,9 @@ DECLARE CURSOR_listOfEmployees CURSOR FOR
     INNER JOIN salaries ON employees.employeeNumber = salaries.employeeNumber
     ORDER BY salaries.salary DESC;
 
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET finished = 1;
+
+
 -- (ii) A Function called FUNC_LAB5
 
 
