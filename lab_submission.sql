@@ -38,5 +38,5 @@ END$$
 DELIMITER ;
 -- (ii) A Function called FUNC_LAB5
 DELIMITER $$
-
+CREATE FUNCTION FUNC_LAB5(salaryAmount DOUBLE)
 -- (iii) A View called VIEW_LAB5
