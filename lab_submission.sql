@@ -45,4 +45,6 @@ BEGIN
     DECLARE category VARCHAR(255);
     IF salaryAmount < 30000 THEN
         SET category = 'Low Salary';
+    ELSEIF salaryAmount BETWEEN 30000 AND 70000 THEN
+        SET category = 'Mid Salary';
 -- (iii) A View called VIEW_LAB5
