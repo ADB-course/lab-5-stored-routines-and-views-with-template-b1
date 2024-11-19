@@ -50,4 +50,6 @@ BEGIN
     ELSE
         SET category = 'High Salary';
     END IF;
+    RETURN category;
+END$$
 -- (iii) A View called VIEW_LAB5
