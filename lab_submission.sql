@@ -47,4 +47,6 @@ BEGIN
         SET category = 'Low Salary';
     ELSEIF salaryAmount BETWEEN 30000 AND 70000 THEN
         SET category = 'Mid Salary';
+    ELSE
+        SET category = 'High Salary';
 -- (iii) A View called VIEW_LAB5
