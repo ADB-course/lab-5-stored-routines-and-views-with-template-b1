@@ -53,3 +53,4 @@ BEGIN
     RETURN category;
 END$$
 -- (iii) A View called VIEW_LAB5
+CREATE OR REPLACE VIEW VIEW_LAB5 AS
