@@ -49,4 +49,5 @@ BEGIN
         SET category = 'Mid Salary';
     ELSE
         SET category = 'High Salary';
+    END IF;
 -- (iii) A View called VIEW_LAB5
