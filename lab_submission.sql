@@ -37,6 +37,6 @@ END$$
 
 DELIMITER ;
 -- (ii) A Function called FUNC_LAB5
-
+DELIMITER $$
 
 -- (iii) A View called VIEW_LAB5
