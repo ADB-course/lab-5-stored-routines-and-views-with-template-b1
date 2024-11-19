@@ -43,4 +43,6 @@ RETURNS VARCHAR(255)
 DETERMINISTIC
 BEGIN
     DECLARE category VARCHAR(255);
+    IF salaryAmount < 30000 THEN
+        SET category = 'Low Salary';
 -- (iii) A View called VIEW_LAB5
