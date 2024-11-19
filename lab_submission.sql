@@ -60,3 +60,6 @@ SELECT
     d.departmentName, 
     s.salaryAmount,
     FUNC_LAB5(s.salaryAmount) AS salary_category
+FROM employees e
+JOIN departments d ON e.departmentID = d.departmentID
+JOIN salaries s ON e.employeeNumber = s.employeeNumber;
