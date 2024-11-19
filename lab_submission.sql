@@ -54,3 +54,9 @@ BEGIN
 END$$
 -- (iii) A View called VIEW_LAB5
 CREATE OR REPLACE VIEW VIEW_LAB5 AS
+SELECT 
+    e.employeeNumber, 
+    e.employeeName, 
+    d.departmentName, 
+    s.salaryAmount,
+    FUNC_LAB5(s.salaryAmount) AS salary_category
